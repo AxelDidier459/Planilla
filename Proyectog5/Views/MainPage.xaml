@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyectog5.Views.MainPage"
+             Title="Listado">
+    <ScrollView>
+        <Grid Padding="10" RowSpacing="10" ColumnSpacing="5">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+
+            <SearchBar Placeholder="Buscar..."
+                       x:Name="filtroEntry"
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+            <Button Text="Nuevo"
+                    x:Name="nuevoButton"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Clicked="nuevoButton_Clicked"/>
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

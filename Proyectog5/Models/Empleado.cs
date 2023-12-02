@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Proyectog5.Models
+{
+    public class Empleado
+    {
+        public string NombreCompleto { get; set; }
+        public DateTime FechaInicio { get; set; }
+        public double Salario { get; set; }
+        public Cargos Cargo {  get; set; }
+
+    }
+}
